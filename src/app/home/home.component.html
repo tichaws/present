@@ -1,0 +1,136 @@
+<header>
+  <div class='slider-navigation'>
+    <div class='nav-pointer draggable'>
+      0/0
+    </div>
+  </div>
+</header>
+<div class='site-container'>
+  <section class='intro'>
+    <div class='wrap'>
+      <div class='content'>
+        <h1>Hello.</h1>
+        <h2>My name is Laphat-rada Wisadsri</h2>
+        <h5> Software Engineer 2</h5>
+      </div>
+    </div>
+  </section>
+  <section style="min-height:100vh">
+    <div class='wrap'>
+      <div class='content'>
+        <h1>Achievement </h1>
+        <p>Achievement: Highlight หรือ Selected Project,Assignment,Task,หรือ Activity
+          ที่นำเสนอความสำเร็จในในปีที่ผ่านมา</p>
+        <ul class="taglist">
+
+          <li>
+            <div class="tag selected mint"><span>AIS</span></div>
+          </li>
+          <li>
+            <div class="tag selected teal"><span>KTB</span></div>
+          </li>
+        </ul>
+        <div class="gallery-wrap">
+          <div class="item item-1" (click)="viewDetail(0)">
+            <div class="content_img">
+              <div>E-business Portal (Click for view detail)</div>
+            </div>
+          </div>
+          <div class="item item-2" (click)="viewDetail(1)">
+            <div class="content_img">
+              <div>Allowance System (Click for view detail)</div>
+            </div>
+          </div>
+          <div class="item item-3" (click)="viewDetail(2)">
+            <div class="content_img">
+              <div>Baiboon (Click for view detail)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class='wrap'>
+      <div class='content'>
+        <h1>Knowledge </h1>
+        <p>Knowledge: Technology, Framework, หรือ Skill ที่ได้เรียนรู้ในปีที่ผ่านมา
+          <ul class="taglist">
+            <li>
+              <div class="tag selected orange"><span>React</span></div>
+            </li>
+            <li>
+              <div class="tag selected orange"><span>React Native</span></div>
+            </li>
+            <li>
+              <div class="tag selected red"><span>Angular</span></div>
+            </li>
+            <li>
+              <div class="tag selected red"><span>SCSS</span></div>
+            </li>
+            <li>
+              <div class="tag selected orange"><span>Node JS</span></div>
+            </li>
+            <li>
+              <div class="tag selected"><span>SQL serialization</span></div>
+            </li>
+            <li>
+              <div class="tag selected "><span>JAVA API</span></div>
+            </li>
+          </ul>
+          <ul class="taglist">
+            <li>
+              <div class="tag selected"><span>Shell script</span></div>
+            </li>
+            <li>
+              <div class="tag selected orange"><span>DESIGNS & INTERFACES</span></div>
+            </li>
+            <li>
+              <div class="tag selected orange"><span>RESPONSIVE DESIGN</span></div>
+            </li>
+            <li>
+              <div class="tag selected red"><span>FEATURES & PLUGINS</span></div>
+            </li>
+            <li>
+              <div class="tag selected red"><span>SUPPORT</span></div>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class='wrap'>
+      <div class='content'>
+        <h1>Problem</h1>
+        <p style="margin-bottom: 30px;">Problem: ปัญหาในการทำงาน หรือ อุปสรรคในการทำตามเป้าหมายให้สำเร็จ </p>
+        <details open style="width:600px">
+          <summary><span>Requirements Change Frequently</span> </summary>
+          <p>The requirements change in the initial stage
+              then it is still OK to adopt the new change in requirements to fix this is less. If the requirements are
+              changing continuously but the changes are communicated well in advance and enough time is given to
+              testing the application then it is not a problem at all.</p>
+        </details>
+        
+        <details style="width:600px">
+          <summary><span>Environment Not enough</span></summary>
+          <p>The benefits of running local is that
+              you can work without influencing/hindering others. The benefits of a central dev server is that you can
+              test how your changes influence and interact with the changes others are making as they are being made.
+              Ideally you want to have both. Develop and run your unit tests locally so you can isolate your changes
+              until you're comfortable with them, then integrate them on the team server so you can check integration
+              of changes before things go to the test systems.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<app-modal #modal>
+  <div class="app-modal-header">
+    <button type="button" class="btn btn-default" style="float:right" (click)="modal.hide()">Close</button>
+  </div>
+  <div class="app-modal-body">
+    <app-detail [id]="detailId"></app-detail>
+  </div>
+</app-modal>

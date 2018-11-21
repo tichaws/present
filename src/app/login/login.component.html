@@ -1,0 +1,59 @@
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Gafata|Nobile:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+</head>
+
+
+<div class="container">
+  <div class="card" [ngClass]="{'flipped': flip}" >
+    <figure class="front" (click)="clickOpen()">
+      <!-- <img src="http://www.jboeijenga.nl/img/front.jpg" alt="front"> -->
+      <img src="assets/img/login.jpg" alt="front">
+      <div class="caption">
+        <h2>LAPHAT-RADA <span>W.</span></h2>
+        <p>Software Engineer 2</p>
+        <a href="#">View more</a>
+      </div>
+    </figure>
+
+    <figure class="back">
+      <!-- <img src="http://www.jboeijenga.nl/img/back.jpg" alt="back">
+      <div class="caption">
+        <dl>
+          <dt>Phone</dt>
+          <dd>012 345 6789</dd>
+          <dt>Email</dt>
+          <dd>johndoe@gmail.com</dd>
+          <dt>Web</dt>
+          <dd>www.johndoe.com</dd>
+        </dl>
+      </div> -->
+      <div id="box">
+      <div id="top_header" (click)="clickOpen()">
+        <h3>Login</h3>
+        <h5>Sign in to continue to your profile page.</h5>
+        <h6 *ngIf="error.status" style="color:red">{{error.msg}}</h6>
+      </div>
+  
+      <div id="inputs">
+        <div id='login'  accept-charset='UTF-8' style="margin-left:6px;">
+  
+          <div class=''>
+            <input type='text' name='username' id='username' value='' maxlength="50" size="30" placeholder="Username" (keypress)="onTyping()" [(ngModel)]="username"  /><br />
+          </div>
+  
+          <div class=''>
+            <input type='password' name='password' id='password' maxlength="50" size="30" placeholder="Password"  (keypress)="onTyping()" [(ngModel)]="password" /><br />
+          </div>
+  
+          <div class='Submit'>
+            <button name='Submit' (click)="login()">Login</button>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+    </figure>
+  </div>
+</div>

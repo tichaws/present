@@ -1,0 +1,20 @@
+<div class="post" >
+    <div>
+      <div class="absolute-bg" [ngClass]="detailList[id].id"></div>
+    </div>
+    <div class="post__container">
+      <span class="post__category">Laphat-rada Profile</span>
+  
+      <div class="post__content">
+        <header>
+          <time class="post__time">{{detailList[id].timeline}}</time>
+          <h1 class="post__header"><span>{{detailList[id].header}}</span></h1>
+        </header>
+
+        <p class="post__text">{{detailList[id].text}}</p>
+      </div>
+      <div class="post__link">
+        <a href="#">Film Posts</a>
+      </div>
+    </div>
+</div>
