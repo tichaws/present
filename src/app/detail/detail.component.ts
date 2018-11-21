@@ -13,9 +13,8 @@ export class DetailComponent implements OnInit {
       id:'id1',
       company:'AIS',
       timeline:'JUN 20 2017 - AUG 31 2018',
-      header:'FULL STACK   E-business Portal',
-      text:'AIS eBusiness Portal is an Online applications to help Corporate customers manage their business’ mobility service through fast & convenience channel.'+
-      'requirements:New UI/UX Design to match with current AIS Corporate Identity (CI) Responsive application which improves user interface experience Cross platform application allows user to connect through various devices New technology & framework to improve and enhance existing system. This also benefit application maintenance in the future Resolve existing defects and implement new pending requirement',
+      header:'FULL STACK  eBusiness Portal',
+      text:'AIS eBusiness Portal is an Online applications to help Corporate customers manage their business’ mobility service through fast & convenience channel.',
       photo:'assets/img/Login_main-page.png'
     },
     {

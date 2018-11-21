@@ -22,7 +22,9 @@
         "styles.css"
       ],
       "scripts": [
-        "assets/js/index.js"
+        "assets/js/index.js",
+        "assets/js/jquery-ui.min.js",
+        "assets/js/jquery.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

@@ -3,7 +3,7 @@
 }
 .modal-dialog{
     max-width:  1600px;
-    margin: 300px auto;
+    margin: 240px auto;
 }
 .modal-content {
     max-width: 1600px;
@@ -15,5 +15,13 @@
 
 .modal-header{
     border-bottom: 0px solid #e9ecef;
-    float: right;
+    text-align: justify;
+    justify-content: flex-end;
+    padding-bottom: 0px;
 }
+
+// @media(max-width: 768px) {
+//     .modal-dialog{
+//         margin:  auto;
+//     }
+// }

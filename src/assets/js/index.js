@@ -1,9 +1,20 @@
 
-$(document).ready(function() {
-  $('.nav-pointer').css('top', sliderTop).text(1 + '/' + 4);
-  
-}); // end document ready
-if(document.URL.includes('/home')){
+// $(document).ready(function() {
+
+//   $('section').each(function(){
+//     $('.slider-navigation').prepend('<div class="tick"></div>');
+//   });
+
+//   $('.tick').on('click',function(){
+//     var tickIndex = $(this).index();
+//     $('body').scrollTop( $(window).height() * tickIndex );
+//   });
+
+//   updatePos();
+
+// }); // end document ready
+
+$(document).on('load','.slider-navigation',function(){
   $('section').each(function(){
     $('.slider-navigation').prepend('<div class="tick"></div>');
   });
@@ -15,7 +26,7 @@ if(document.URL.includes('/home')){
 
   updatePos();
 
-}
+});
 
 var isDragging = false;
 var sliderTop,pointerPos,currentSection;

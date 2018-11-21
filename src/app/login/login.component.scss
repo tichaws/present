@@ -11,8 +11,7 @@ input {
 
 #box {
   margin-top: 135px;
-  max-width: 600px;
-  min-width: 345px;
+  max-width: 700px;
   height: 450px;
   background-color: #fff;
   margin: 0 auto;
@@ -141,7 +140,7 @@ a:hover {
 // ------------------------------
 
 .container, figure{
-  width:700px;
+  max-width:700px;
   height: 400px;
 }
 
@@ -182,6 +181,7 @@ figure.front{
 figure.back,
 .card.flipped{
   transform: rotateY(180deg);
+  width: inherit;
 }
 
 figure img{
